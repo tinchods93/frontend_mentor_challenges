@@ -1,0 +1,67 @@
+:root {
+  --dark_cyan: hsl(158, 36%, 37%);
+  --dark_cyan_hover: hsl(157, 37%, 19%);
+  --cream: hsl(30, 38%, 92%);
+  --very_dark_blue: hsl(212, 21%, 14%);
+  --dark_grayish_blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--cream);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  width: 100%;
+  min-width: 300px;
+  font-weight: 500;
+  overflow-x: hidden;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+h1 {
+  color: var(--very_dark_blue);
+  line-height: 1;
+  font-weight: bold;
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  word-wrap: normal;
+}
+
+
+
+.button {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--white);
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: var(--dark_cyan);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button:hover {
+  background: var(--dark_cyan_hover);
+  cursor: pointer;
+}
